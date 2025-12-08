@@ -61,9 +61,12 @@ git brach -M main
 git remote add origin htts://github.com/Jerrielx/...
 git push -u origin main
 
+## git ssh
+ssh-keygen -t ed25519 -C "email@.com"
+
 ## raspberry pi notes
 sudo apt update
-ssh jerrych@192.168.50.14
+ssh jerrych@ip
 ssh jerrych@jerrypi.local
 sudo reboot
 sudo shutdown - stänger av rpi helt
