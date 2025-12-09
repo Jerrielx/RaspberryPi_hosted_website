@@ -72,3 +72,30 @@ sudo reboot
 sudo shutdown - stänger av rpi helt
 exit - avsluta ssh
 
+## HTML
+<html>...</html> - whole page
+<head>...</head> - info about the page(title, encoding)
+<body>...</body> - everything visible
+<h1>, <h2>, <h3> - headings(big -> smaller)
+<p> - paragraph, <u1><li> - bullest list
+
+<meta charset="UTF-8"/> - what character encoding the page uses
+<a href="link">link</a>
+<a hred="link" target="_blank">Github</a>
+a = anchor (a hyperlink) - creates a clickable link
+href="" - tells the browser where to go when link is clicked
+"_blank" - open in a new tab
+<em> - Italics(semantic)
+<ul> - unordered list(bullet points), <li> - list item
+<br> - go to next line, 
+&nbsp; = non-breaking space, &lt; = <, &gt; = >, &amp; = &
+<link rel="stylesheet" href="style.css">
+<link> - include another file as part of this page
+rel - relation
+<div class = "container"> - a box that groups elements together
+
+## CSS
+#RRGGBB 00(0%) -> FF(100%), #f5f5f5-light gray, #ffffff-white
+.container{...} - class selector
+max-width: 800px - limits width, margin: 0 auto - centers the container horizontally
+padding: 20px - add space between text and edges

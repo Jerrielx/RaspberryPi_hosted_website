@@ -1,0 +1,53 @@
+/* Raspberry Pi hosted Website
+ * Author:  Jerry Cheung
+ * Date:    2025-12-09
+ * File:    style.css
+ * Description: css file stylesheet for my html website
+ * Version: 1.01
+ */
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size : 36px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 4px;
+}
+
+p {
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+ul {
+    margin-bottom: 20px;    /*space outsite the list*/
+    padding-left: 20px;     /*indent inside the list*/
+}
+
+.container{
+    max-width: 800px;   /* limit width*/
+    margin: 0 auto;     /* center container horizontally*/
+    padding: 20px;      /* space inside container*/
+    background: white; /* white background for clean look*/
+    border-radius: 10px;  /* soft rounded corners */
+}
