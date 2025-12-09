@@ -1,5 +1,13 @@
 # Project Notes
 
+## Linux
+sudo nmcli device wifi connect "YourSSID" --ask
+nmcli - network manager command line interface
+curl -fsSL https://tailscale.com/install.sh | sh
+curl - program that downloads data from internet
+-f fail silently on server errors, -s silent mode
+-S show error if something fails, -L follow redirects(if URL changes)
+
 ## Nginx Setup
 
 sudo apt install nginx -y
@@ -99,3 +107,10 @@ rel - relation
 .container{...} - class selector
 max-width: 800px - limits width, margin: 0 auto - centers the container horizontally
 padding: 20px - add space between text and edges
+
+## Tailscale commends
+sudo tailscale up
+tailscale ip -4
+tailscale status
+sudo tailscale funnel --bg 80 - expose my pi's port 80 to internet
+--bg : background configuration
