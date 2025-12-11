@@ -58,8 +58,11 @@ ul {
     max-width: 800px;   /* limit width*/
     margin: 0 auto;     /* center container horizontally*/
     padding: 20px;      /* space inside container*/
-    background: #ffffff; /* white background for clean look*/
+
+    background: rgba(255, 255, 255, 0.85); /*white with 85% opacity*/
     border-radius: 10px;  /* soft rounded corners */
+    
+
 }
 
 a {
