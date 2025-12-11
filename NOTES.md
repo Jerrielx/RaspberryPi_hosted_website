@@ -1,3 +1,8 @@
+# Raspberry Pi project notes
+# Author: Jerry Cheung
+# File: NOTES.MD
+# Date: 2015-12-11
+
 # Project Notes
 
 ## Linux
