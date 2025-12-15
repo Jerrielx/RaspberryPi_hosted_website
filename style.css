@@ -90,3 +90,8 @@ a:hover {
 .top-nav a:hover{
     text-decoration: underline;
 }
+
+.home-section {
+    margin-top: 32px;
+    padding-top: 8px;
+}
