@@ -74,3 +74,19 @@ a {
 a:hover {
     text-decoration: underline; /*underline when mouse hovers*/
 }
+
+.top-nav{
+    display: flex;  /*line up horizontally*/
+    justify-content: flex-end; /*push all nav links to the right side*/
+    gap: 24px;
+
+    padding: 20px 40px;
+    font-size: 16px;
+}
+.top-nav a{
+    text-decoration: none;
+    color: #222;
+}
+.top-nav a:hover{
+    text-decoration: underline;
+}
