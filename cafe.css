@@ -1,6 +1,6 @@
 /* Raspberry Pi hosted Website
  * Author:  Jerry Cheung
- * Date:    2025-12-11
+ * Date:    2025-12-16
  * File:    style.css
  * Description: css file stylesheet for cafe website
  * Version: 1.01
@@ -63,7 +63,7 @@ body {
     place-items: center;
     text-align: center;
     padding: 80px 24px;
-    background: url("HERO_IMAGE.jpg") center/cover no-repeat;
+    background: url("/images/bistro-hero.jpeg") center/cover no-repeat;
 }
 
 .cafe-hero h1{margin:0; font-size: 48px;}
