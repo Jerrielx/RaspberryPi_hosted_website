@@ -119,3 +119,16 @@ tailscale ip -4
 tailscale status
 sudo tailscale funnel --bg 80 - expose my pi's port 80 to internet
 --bg : background configuration
+
+## Mirroring cafe website
+curl -s https://bistrograndenstockholm.se/
+grep -oE 'https://impro\.usercontent\.one[^"]+'
+sed 's/&amp;/\&/g'  replace every &amp; with &
+head -n 20
+  curl : downloads the raw html of the homepage, -s = silent(no progress bar)
+  grep searches text for lines that match a pattern
+  -o only print the matched part, -E extended regular expressions
+  [^"]+ grab until quote
+  sed stream editor, s/old/new/ = replace old with new, g = globally
+  head prints the beginning of the input, -n 20 print the first 20 lines
+

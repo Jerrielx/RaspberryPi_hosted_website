@@ -2,91 +2,74 @@
  * Author:  Jerry Cheung
  * Date:    2025-12-11
  * File:    style.css
- * Description: css file stylesheet for my html website
+ * Description: css file stylesheet for cafe website
  * Version: 1.01
  */
 
+:root{
+    --bg-dark: #27100a; /*Bistro dark brown*/
+    --bg-green: #7ea177; /*Bistro green*/
+    --text-light: #ffffff;
+    --max: 1050px;
+}
+
+*{ box-sizing: border-box; }
+html,body{ margin:0; padding:0; }
+
 body {
-    /*fallback color if image fails to load*/
-    background-color: #f5f5f5;
-
-    /*background image filling the whole page*/
-    background-image: url('background_main.png');
-    background-size: cover; /*cover entire screen*/
-    background-position: center;
-    background-attachment: fixed; /*parallax like effect*/
-
-    font-family: Arial, sans-serif;
-    font-size: 17px;
-    line-height: 1.5;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-h1 {
-    font-size : 36px;
-    margin-bottom: 5px;
-    color: #222;
+/*page width like the original builder layout*/
+
+.cafe-wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
-h2 {
-    font-size: 18px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #555;
+.cafe-header{
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--bg-green);
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
 }
 
-h3 {
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #333;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 4px;
+.cafe-nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
-p {
-    line-height: 1.5;
-    margin-top: 0;
-    margin-bottom: 16px;
-}
-
-ul {
-    margin-bottom: 20px;    /*space outsite the list*/
-    padding-left: 20px;     /*indent inside the list*/
-}
-
-.container{
-    max-width: 800px;   /* limit width*/
-    margin: 0 auto;     /* center container horizontally*/
-    padding: 20px;      /* space inside container*/
-
-    background: rgba(255, 255, 255, 0.85); /*white with 85% opacity*/
-    border-radius: 10px;  /* soft rounded corners */
-    
-
-}
-
-a {
-    color: #2563eb; /*links to modern blue*/
-    text-decoration: none; /*removes default underline from links*/
-    font-weight: 500; /*links slight thicker*/
-}
-
-a:hover {
-    text-decoration: underline; /*underline when mouse hovers*/
-}
-
-.top-nav{
-    display: flex;  /*line up horizontally*/
-    justify-content: flex-end; /*push all nav links to the right side*/
-    gap: 24px;
-
-    padding: 20px 40px;
-    font-size: 16px;
-}
-.top-nav a{
+.cafe-brand{
+    font-weight: 600;
+    color: #27100a;
     text-decoration: none;
-    color: lightgreen;
 }
-.top-nav a:hover{
-    text-decoration: underline;
+
+.cafe-nav a{
+    color: #27100a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cafe-hero{
+    min-height: 520px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 80px 24px;
+    background: url("HERO_IMAGE.jpg") center/cover no-repeat;
+}
+
+.cafe-hero h1{margin:0; font-size: 48px;}
+.cafe-hero p{
+    max-width: 640px;
+    margin: 18px auto 0;
+    font-size: 16px;
+    line-height: 1.6;
 }
