@@ -1,6 +1,6 @@
 /* Raspberry Pi hosted Website
  * Author:  Jerry Cheung
- * Date:    2025-12-16
+ * Date:    2025-12-17
  * File:    style.css
  * Description: css file stylesheet for cafe website
  * Version: 1.01
@@ -10,11 +10,16 @@
     --bg-dark: #27100a; /*Bistro dark brown*/
     --bg-green: #7ea177; /*Bistro green*/
     --text-light: #ffffff;
-    --max: 1050px;
+    --max-width: 1050px;
 }
 
 *{ box-sizing: border-box; }
-html,body{ margin:0; padding:0; }
+html,body{ 
+    margin:0; 
+    padding:0;
+    /*smooth scroll for nav anchor links */
+    scroll-behavior: smooth;
+}
 
 body {
     background: var(--bg-dark);
@@ -25,10 +30,12 @@ body {
 /*page width like the original builder layout*/
 
 .cafe-wrap {
-    max-width: var(--max);
+    max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 24px;
 }
+
+/*top navigation */
 
 .cafe-header{
     position: sticky;
@@ -43,10 +50,13 @@ body {
     display: flex;
     align-items: center;
     gap: 18px;
+    justify-content: flex-end;
 }
 
 .cafe-brand{
+    margin-right: auto;
     font-weight: 600;
+    letter-spacing: 0.4px;
     color: #27100a;
     text-decoration: none;
 }
@@ -55,21 +65,59 @@ body {
     color: #27100a;
     text-decoration: none;
     font-weight: 500;
+    padding: 10px 12px;
+    border-radius: 6px;
 }
 
+.cafe-nav a:hover {
+    background: rgba(39, 16, 10, .18);
+}
+
+/* Hero section */
 .cafe-hero{
-    min-height: 520px;
+    min-height: 1080px;
     display: grid;
     place-items: center;
     text-align: center;
     padding: 80px 24px;
-    background: url("/images/bistro-hero.jpeg") center/cover no-repeat;
+
+    /* image */
+    background: 
+        url("/images/bistro-hero.jpeg") center/contain no-repeat;
 }
 
-.cafe-hero h1{margin:0; font-size: 48px;}
+.cafe-hero h1{
+    margin:0; 
+    font-size: 48px;
+}
+
 .cafe-hero p{
     max-width: 640px;
     margin: 18px auto 0;
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* Scroll sections */
+main.cafe-wrap {
+    padding: 48px 24px 90px;
+}
+
+main.cafe-wrap section{
+    padding: 56px 0;
+    border-top: 1px solid rgba(255, 255, 255, .12);
+    scroll-margin-top: 100px; /* height of sticky nav */
+}
+
+main.cafe-wrap h2 {
+    margin: 0 0 14px;
+    font-size: 28px;
+    letter-spacing: 0.4px;
+}
+
+main.cafe-wrap p {
+    margin: 0;
+    max-width: 720px;
+    line-height: 1.6;
+    opacity: 0.95;
 }
