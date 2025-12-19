@@ -27,4 +27,4 @@
 <h1> only ONE h1 per page, main title of the page
 <p> paragraph of text
 
-<main class="cafe-wrap"> only ONE main per page
+<main class="cafe-wrap"> this is the primary content of the page, only ONE main per page

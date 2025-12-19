@@ -77,6 +77,13 @@ git push -u origin main
 ## git ssh
 ssh-keygen -t ed25519 -C "email@.com"
 
+## git change from https to ssh
+git remote -v
+ssh-keygen -t ed25519 -C "Laptop"
+cat ~/.ssh/id_ed25519.pub
+copy the public key to github/settings/ssh/new ssh key with title laptop/save
+git remote set-url origin new_ssh_url
+
 ## raspberry pi notes
 sudo apt update
 ssh jerrych@ip
