@@ -1,3 +1,10 @@
+# cafe notes
+# Author: Jerry Cheung
+# File: cafe.md
+# Date: 2015-12-20
+# Description: HTML and CSS learning notes regarding cafe webpage
+
+## HTML part
 <!DOCTYPE html> render this page using modern standards mode
 <html lang="en"> ... </html> root element of the page, lang accessibility+better SEO, screen readers
 <head> ... </head> metadata and resources, not visible page content
@@ -28,3 +35,7 @@
 <p> paragraph of text
 
 <main class="cafe-wrap"> this is the primary content of the page, only ONE main per page
+<section id="about"> one thematic content block with unique id "about". there can be only one id="about" on the page, target for css or js
+<h1> page title, <h2> section titles, <h3> subsections
+<br> line break inside text
+<footer> sematic block, normally at bottom. behaves like <div>
