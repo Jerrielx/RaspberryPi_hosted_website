@@ -7,10 +7,10 @@
  */
 
 :root{
-    --bg-dark: #27100a; /*Bistro dark brown*/
-    --bg-green: #7ea177; /*Bistro green*/
-    --text-light: #ffffff;
-    --max-width: 1050px;
+    --bg-dark: #27100a; /* dark brown background */
+    --bg-green: #7ea177; /* green used for header */
+    --text-light: #ffffff; /* white text */
+    --max-width: 1050px; /* layout width cap */
 }
 
 *{ box-sizing: border-box; }

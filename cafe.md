@@ -39,3 +39,14 @@
 <h1> page title, <h2> section titles, <h3> subsections
 <br> line break inside text
 <footer> sematic block, normally at bottom. behaves like <div>
+
+## CSS part
+CSS rule    property: value;
+:root{...} pseudo-class selector, selects root element of the document, global variables place
+--bg-dark: #27100a; css custom properties(css variables), start with --
+how to use: background: var(--bg-dark); use the value stored in --bg-dark
+
+* {} - * means universal selector, select every element on the page
+box-sizing: border-box; - 
+html,body{} apply these rules to both <html> and <body>
+scroll-behavior: smooth; clicking <a href="#..."> instead of jumping -> smoothly scrolls
