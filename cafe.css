@@ -1,6 +1,6 @@
 /* Raspberry Pi hosted Website
  * Author:  Jerry Cheung
- * Date:    2025-12-17
+ * Date:    2025-12-20
  * File:    style.css
  * Description: css file stylesheet for cafe website
  * Version: 1.01
@@ -15,8 +15,8 @@
 
 *{ box-sizing: border-box; }
 html,body{ 
-    margin:0; 
-    padding:0;
+    margin: 0; 
+    padding: 0;
     /*smooth scroll for nav anchor links */
     scroll-behavior: smooth;
 }
@@ -120,4 +120,9 @@ main.cafe-wrap p {
     max-width: 720px;
     line-height: 1.6;
     opacity: 0.95;
+}
+
+footer{
+    margin: 10px;
+    padding: 10px;
 }

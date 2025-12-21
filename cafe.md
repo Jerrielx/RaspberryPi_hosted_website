@@ -42,11 +42,23 @@
 
 ## CSS part
 CSS rule    property: value;
+/* comments */ 
+Every element in CSS is a box. Box has content, padding, border. outside box: margin
 :root{...} pseudo-class selector, selects root element of the document, global variables place
 --bg-dark: #27100a; css custom properties(css variables), start with --
 how to use: background: var(--bg-dark); use the value stored in --bg-dark
 
 * {} - * means universal selector, select every element on the page
-box-sizing: border-box; - 
+box-sizing: border-box; - width includes content + padding + border
 html,body{} apply these rules to both <html> and <body>
 scroll-behavior: smooth; clicking <a href="#..."> instead of jumping -> smoothly scrolls
+margin - creates space outside the element
+padding - pushes content inward. space insite the element
+
+background: background color, images, gradients
+color: text color
+font-family: tries first font, if not available -> tries the next, keeps going
+system-ui->modern system font, -apple-system->macOS/iOS, Segoe UI->windows, Roboto->android, Arial->common fallback, sans-serif->generic fallback
+.cafe-wrap{} - any element with class="cafe-wrap"
+margin: 0 auto - vertical margin=0, horizontal margin = auto, auto = take leftover horizontal space and split it evenly
+padding: 0 24px - 
