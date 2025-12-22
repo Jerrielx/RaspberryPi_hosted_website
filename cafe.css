@@ -1,6 +1,6 @@
 /* Raspberry Pi hosted Website
  * Author:  Jerry Cheung
- * Date:    2025-12-20
+ * Date:    2025-12-22
  * File:    style.css
  * Description: css file stylesheet for cafe website
  * Version: 1.01
@@ -27,6 +27,16 @@ body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
+/*top navigation */
+
+.cafe-header{
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+    background: var(--bg-green);
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
 /*page width like the original builder layout*/
 
 .cafe-wrap {
@@ -35,15 +45,7 @@ body {
     padding: 0 24px;
 }
 
-/*top navigation */
 
-.cafe-header{
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: var(--bg-green);
-    border-bottom: 1px solid rgba(0, 0, 0, .15);
-}
 
 .cafe-nav{
     height: 80px;

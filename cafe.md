@@ -59,6 +59,12 @@ background: background color, images, gradients
 color: text color
 font-family: tries first font, if not available -> tries the next, keeps going
 system-ui->modern system font, -apple-system->macOS/iOS, Segoe UI->windows, Roboto->android, Arial->common fallback, sans-serif->generic fallback
+
+position: sticky; 
+top: 0 sets the sticking position: 0px from the top edge
+z-index: 50; 
+border-bottom: 1px solid rgba(0, 0, 0, .15); adds a think line under the header. 1px width, solid style(continuous line), rgba color(r, g, b, opacity) 
+
 .cafe-wrap{} - any element with class="cafe-wrap"
 margin: 0 auto - vertical margin=0, horizontal margin = auto, auto = take leftover horizontal space and split it evenly
 padding: 0 24px - 
